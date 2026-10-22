@@ -4,7 +4,7 @@
 .schedule-heading{display:flex;justify-content:space-between;align-items:end;gap:24px}.schedule-heading h2{margin-bottom:8px}.schedule-zone{display:inline-flex;flex:none;color:#006f75;background:#e5f3f0;border:1px solid #cce7e1;border-radius:100px;padding:7px 13px;font-size:.82rem;font-weight:750;white-space:nowrap}.schedule-notice{margin:23px 0 33px}.agenda{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:22px}.agenda-block{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 12px 30px #0c34500a}.agenda-block-head{display:flex;align-items:center;gap:16px;padding:23px 25px;color:#fff;background:linear-gradient(110deg,#092b3c,#155660)}.agenda-index{display:grid;place-items:center;width:43px;height:43px;border:1px solid #79aeb0;border-radius:12px;font-weight:800;color:#8ce3d5}.agenda-block-head p{margin:0;color:#9cdbd8;font-size:.72rem;font-weight:800;letter-spacing:.12em}.agenda-block-head h3{margin:3px 0 0;font-size:1.3rem}.agenda-block-count{margin-left:auto;color:#b1d9d8;font-size:.78rem;white-space:nowrap}.agenda-list{list-style:none;margin:0;padding:7px 23px 14px}.agenda-item{display:grid;grid-template-columns:110px minmax(0,1fr);gap:15px;position:relative;padding:17px 0 17px 15px;border-bottom:1px solid #e5eceb}.agenda-item:last-child{border-bottom:0}.agenda-item:before{content:"";position:absolute;top:22px;bottom:18px;left:0;width:3px;border-radius:3px;background:#a7caca}.agenda-keynote:before{background:var(--teal)}.agenda-break:before{background:#dec894}.agenda-time{font-size:.85rem;font-variant-numeric:tabular-nums;font-weight:800;color:#12364a;white-space:nowrap;padding-top:1px}.agenda-dash{padding:0 3px;color:#879da6}.agenda-type{display:block;margin-bottom:4px;font-size:.68rem;text-transform:uppercase;letter-spacing:.13em;font-weight:850;color:#007f80}.agenda-break .agenda-type{color:#a06d16}.agenda-item h4{font-size:.98rem;line-height:1.35;margin:0;font-weight:720;overflow-wrap:anywhere}.agenda-sub{color:var(--muted);margin:4px 0 0;font-size:.82rem;line-height:1.4}.agenda-break{background:#fbfaf6;margin:0 -10px;padding-left:25px;padding-right:10px;border-radius:7px}.agenda-break:before{left:10px}.agenda-break h4{color:#5b6060;font-weight:600}@media(max-width:930px){.agenda{grid-template-columns:1fr}.agenda-block-count{display:block}}@media(max-width:580px){.schedule-heading{display:block}.schedule-zone{margin-top:5px}.agenda-list{padding-left:16px;padding-right:16px}.agenda-item{grid-template-columns:1fr;gap:5px}.agenda-time{font-size:.78rem}.agenda-block-head{padding:18px}.agenda-block-count{display:none}}
 .person-link{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--teal)}.person-link:hover{color:#007c7b}code{font-size:.9em;overflow-wrap:anywhere}
 
-/* CI4Agents single-page layout */
+/* Context4Agents single-page layout */
 html{scroll-padding-top:100px}
 section[id],.subsection[id]{scroll-margin-top:100px}
 .site-header{position:sticky;top:0;z-index:50;box-shadow:0 6px 24px #0618281a}
@@ -16,7 +16,6 @@ section[id],.subsection[id]{scroll-margin-top:100px}
 .hero-title-second{font-size:clamp(1.95rem,3.6vw,3.45rem);color:#7bddd1;margin-top:5px}
 .hero .hero-subtitle{font-size:clamp(1.38rem,2.55vw,2.35rem);line-height:1.22;letter-spacing:-.025em;font-weight:750;color:#eaf9f4;margin:22px 0 16px}
 .hero .hero-lede{font-size:1.08rem;max-width:60ch;color:#c6dbe0}
-.hero-art{width:min(100%,290px)}
 .prose{max-width:920px}.prose p{max-width:82ch;color:#405768;font-size:1.1rem}.prose p:last-child{margin-bottom:0}
 #about .section-intro{max-width:100%;color:#405768;font-size:1.1rem}
 #about .section-intro + .section-intro{margin-top:18px}
@@ -55,3 +54,10 @@ section[id],.subsection[id]{scroll-margin-top:100px}
 #organizers .person>span:not(.portrait){display:block;margin:0 8px;min-height:2.6em;font-size:.81rem;line-height:1.35;color:var(--muted)}
 @media(max-width:700px){#organizers .people{grid-template-columns:repeat(3,minmax(0,1fr));max-width:530px}#dates{margin-top:75px;padding-top:37px}}
 @media(max-width:450px){#organizers .people{grid-template-columns:repeat(2,minmax(0,1fr));max-width:350px;gap:10px}#organizers .person strong{font-size:.88rem}#organizers .person>span:not(.portrait){font-size:.75rem}}
+
+/* Center the text-only hero after removing the workshop mark. */
+#home .hero-inner{display:block;text-align:center;padding:84px 0 90px}
+#home .hero-inner > div{max-width:1020px;margin-inline:auto}
+#home .hero-lede{margin-inline:auto}
+#home .meta,#home .actions{justify-content:center}
+@media(max-width:760px){#home .hero-inner{padding:58px 0 64px}}
